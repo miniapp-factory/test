@@ -1,0 +1,470 @@
+
+# 2025-11-20 18:30:58.900955
++Code the following app
++```
++Build a Farcaster Mini App that allows users to take interactive tests and personality quizzes, primarily focused on Web3, crypto culture, memes, and fun topics, while also enabling users to create their own quizzes with a lightweight publishing workflow and admin verification.
++Core Concept
++A fast, visual, social quiz experience inside Farcaster.
++Users can:
++Take quizzes (Web3 knowledge, personality “who are you” types, meme quizzes, etc.)
++Create their own quizzes using an in-app builder
++Get personalized results with images and descriptions
++Share results directly into Farcaster
++Browse quizzes created by the community
++See their history and manage drafts
++Admins can:
++Review user-created quizzes
++Approve or reject them before publishing
++1. Home Screen
++
++A feed-style layout showing:
++
++Featured quizzes of the day
++
++Categories (Web3, Crypto, Memes, Personality, General Knowledge)
++
++Community quizzes
++
++CTA button “Create your own quiz”
++
++Each quiz appears as a card with:
++
++Cover image
++
++Title
++
++Category tags
++
++Popularity indicator
++
++2. Quiz Overview Screen
++
++When a user clicks a quiz:
++
++Large cover image
++
++Title
++
++Short description
++
++Tags
++
++Difficulty (optional)
++
++Start button: “Start Quiz”
++
++3. Quiz Flow (Taking a Quiz)
++
++Each quiz consists of multiple steps:
++
++One question per screen
++
++Optional image for the question
++
++3–5 answer options as large tap-friendly cards
++
++A progress indicator (“Question 3/7”)
++
++Answer types:
++
++Personality quizzes → every answer maps to an “outcome key”
++
++Knowledge quizzes → answers marked correct/incorrect or with score values
++
++At the end:
++
++Result is calculated (most frequent outcomeKey OR score range)
++
++User is redirected to the results screen
++
++4. Results Screen
++
++A visually appealing result with:
++
++Large result image
++
++Bold headline (e.g., “You are Leonardo!”)
++
++Description text
++
++Score summary (for knowledge quizzes)
++
++Social actions:
++
++Share result on Farcaster (opens composer with image/text)
++
++“Try another quiz”
++
++This is the viral loop.
++
++5. Quiz Builder (User-Generated Content)
++
++A simple 3–4 step creation wizard:
++
++Step 1 — Quiz info
++
++Title
++
++Description
++
++Category
++
++Quiz type (Personality / Knowledge)
++
++Cover image
++
++Step 2 — Questions
++
++For each question:
++
++Question text
++
++Optional image
++
++Answer options (3–5 answers)
++
++For Personality: each answer linked to an outcomeKey
++
++For Knowledge: mark correct answer or assign score value
++
++Step 3 — Outcomes
++
++Configure results:
++
++For Personality: list of outcomes (e.g., “Leonardo”, “Donatello”, etc.)
++
++For Knowledge: score ranges → outcomes
++
++Step 4 — Submit for Review
++
++User sends quiz for moderation:
++
++Status: draft → pending_review → published
++
++6. Admin Panel
++
++A simple moderation dashboard:
++
++List of quizzes with status filters
++
++View full quiz content (questions, answers, outcomes)
++
++Approve or reject with a comment
++
++7. User Profile
++
++A lightweight profile page showing:
++
++FID, username, avatar
++
++Created quizzes (draft, pending, published)
++
++Quiz history (past results)
++
++Drafts not yet submitted
++
++8. Social Features
++
++Sharing results into Farcaster
++
++Sharing quizzes themselves
++
++Showing trending & most-taken quizzes
++
++Highlighting featured community creators
++Must run as a Farcaster Mini App
++
++Use the Mini App SDK for:
++
++Ready-state
++
++User context (FID)
++
++Share actions
++
++Use a backend (Next.js API routes or serverless functions) for:
++
++storing quizzes
++
++verifying creators
++
++admin review
++
++storing submissions and results
++
++Store images (cover, questions, outcomes) in a simple CDN or storage bucket
++
++Use a database for:
++
++quizzes
++
++questions
++
++answers
++
++outcomes
++
++submissions
++
++users
++
++moderation states
++
++A fully functional Farcaster Mini App where users can:
++
++browse quizzes
++
++take quizzes
++
++create quizzes
++
++get results
++
++share results
++
++enjoy community-generated content
++
++And where admins can:
++
++moderate and approve new quizzes before publishing.
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 18:30:58.902262
++Code the following app
++```
++Build a Farcaster Mini App that allows users to take interactive tests and personality quizzes, primarily focused on Web3, crypto culture, memes, and fun topics, while also enabling users to create their own quizzes with a lightweight publishing workflow and admin verification.
++Core Concept
++A fast, visual, social quiz experience inside Farcaster.
++Users can:
++Take quizzes (Web3 knowledge, personality “who are you” types, meme quizzes, etc.)
++Create their own quizzes using an in-app builder
++Get personalized results with images and descriptions
++Share results directly into Farcaster
++Browse quizzes created by the community
++See their history and manage drafts
++Admins can:
++Review user-created quizzes
++Approve or reject them before publishing
++1. Home Screen
++
++A feed-style layout showing:
++
++Featured quizzes of the day
++
++Categories (Web3, Crypto, Memes, Personality, General Knowledge)
++
++Community quizzes
++
++CTA button “Create your own quiz”
++
++Each quiz appears as a card with:
++
++Cover image
++
++Title
++
++Category tags
++
++Popularity indicator
++
++2. Quiz Overview Screen
++
++When a user clicks a quiz:
++
++Large cover image
++
++Title
++
++Short description
++
++Tags
++
++Difficulty (optional)
++
++Start button: “Start Quiz”
++
++3. Quiz Flow (Taking a Quiz)
++
++Each quiz consists of multiple steps:
++
++One question per screen
++
++Optional image for the question
++
++3–5 answer options as large tap-friendly cards
++
++A progress indicator (“Question 3/7”)
++
++Answer types:
++
++Personality quizzes → every answer maps to an “outcome key”
++
++Knowledge quizzes → answers marked correct/incorrect or with score values
++
++At the end:
++
++Result is calculated (most frequent outcomeKey OR score range)
++
++User is redirected to the results screen
++
++4. Results Screen
++
++A visually appealing result with:
++
++Large result image
++
++Bold headline (e.g., “You are Leonardo!”)
++
++Description text
++
++Score summary (for knowledge quizzes)
++
++Social actions:
++
++Share result on Farcaster (opens composer with image/text)
++
++“Try another quiz”
++
++This is the viral loop.
++
++5. Quiz Builder (User-Generated Content)
++
++A simple 3–4 step creation wizard:
++
++Step 1 — Quiz info
++
++Title
++
++Description
++
++Category
++
++Quiz type (Personality / Knowledge)
++
++Cover image
++
++Step 2 — Questions
++
++For each question:
++
++Question text
++
++Optional image
++
++Answer options (3–5 answers)
++
++For Personality: each answer linked to an outcomeKey
++
++For Knowledge: mark correct answer or assign score value
++
++Step 3 — Outcomes
++
++Configure results:
++
++For Personality: list of outcomes (e.g., “Leonardo”, “Donatello”, etc.)
++
++For Knowledge: score ranges → outcomes
++
++Step 4 — Submit for Review
++
++User sends quiz for moderation:
++
++Status: draft → pending_review → published
++
++6. Admin Panel
++
++A simple moderation dashboard:
++
++List of quizzes with status filters
++
++View full quiz content (questions, answers, outcomes)
++
++Approve or reject with a comment
++
++7. User Profile
++
++A lightweight profile page showing:
++
++FID, username, avatar
++
++Created quizzes (draft, pending, published)
++
++Quiz history (past results)
++
++Drafts not yet submitted
++
++8. Social Features
++
++Sharing results into Farcaster
++
++Sharing quizzes themselves
++
++Showing trending & most-taken quizzes
++
++Highlighting featured community creators
++Must run as a Farcaster Mini App
++
++Use the Mini App SDK for:
++
++Ready-state
++
++User context (FID)
++
++Share actions
++
++Use a backend (Next.js API routes or serverless functions) for:
++
++storing quizzes
++
++verifying creators
++
++admin review
++
++storing submissions and results
++
++Store images (cover, questions, outcomes) in a simple CDN or storage bucket
++
++Use a database for:
++
++quizzes
++
++questions
++
++answers
++
++outcomes
++
++submissions
++
++users
++
++moderation states
++
++A fully functional Farcaster Mini App where users can:
++
++browse quizzes
++
++take quizzes
++
++create quizzes
++
++get results
++
++share results
++
++enjoy community-generated content
++
++And where admins can:
++
++moderate and approve new quizzes before publishing.
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 18:31:34.530160
++apply changes
+
+# 2025-11-20 18:31:34.530736
++apply changes
